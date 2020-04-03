@@ -1,17 +1,9 @@
-package daily;
+package old;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * 	没有很好的思路，只能暴力排查
- * 	 但考虑到可能会有剪枝的现象，所以实际复杂度应该低于O(n^4)
- * 	先对数组排序，复杂度n^2
- * 	然后暴力循环n^4
- * @author mayfly
- *
- */
 
 public class Leetcode_4sum {
 	
