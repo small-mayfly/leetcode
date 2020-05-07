@@ -31,7 +31,6 @@ public class ID1116_2 {
             }
         }
         o.release();
-        e.release();
     }
 
     public void even(IntConsumer printNumber) throws InterruptedException {
@@ -56,7 +55,7 @@ public class ID1116_2 {
 
     public static void main(String[] args) {
         ExecutorService service = Executors.newFixedThreadPool(3);
-        ID1116_2 id1116 = new ID1116_2(5);
+        ID1116_2 id1116 = new ID1116_2(3);
         Runnable zero = new Runnable() {
             @Override
             public void run() {
