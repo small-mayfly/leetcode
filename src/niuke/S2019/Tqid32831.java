@@ -3,6 +3,10 @@ package niuke.S2019;
 import java.util.*;
 
 public class Tqid32831 {
+    /**
+     * 动态规划的思想
+     * @param args
+     */
     public static void main(String[] args){
 
 
@@ -16,7 +20,7 @@ public class Tqid32831 {
         // 将物品按照体积顺序排序
         Arrays.sort(vs);
 
-        // 用以记录所有出现过的重量
+        // 用以记录所有出现过的重量，减少内存消耗
         HashMap<Integer, Long> rems = new HashMap<Integer, Long>();
         // 总体积为0也算一种放法
         rems.put(0, 1L);
