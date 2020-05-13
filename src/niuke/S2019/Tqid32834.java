@@ -17,6 +17,7 @@ public class Tqid32834 {
             as[i] = in.nextInt();
         }
         int m = in.nextInt();
+        // hashmap.keySet()获取到的key是无序的，不是按照从小到大排序
         HashMap<Integer, Integer> qs = new HashMap<Integer, Integer>();
         int[] qst = new int[m];
         int[] qsrem = new int[m];
