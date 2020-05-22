@@ -16,7 +16,7 @@ public class Tqid32842 {
         int start = 1;
         while(start<=index){
             sum += magic(index-start);
-            sum %= 1000000003;   // 这是一个比较坑的地方，题目中没有写要取余
+            sum %= 1000000003;   // 这是一个比较坑的地方，题目最下方写了要取余，不取余long类型也会溢出
             start <<= 1;
         }
         rems[index] = sum;
